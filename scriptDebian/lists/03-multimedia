@@ -1,0 +1,55 @@
+# ----------------------------------------------------------
+# MULTIMÍDIA - STABLE
+# ----------------------------------------------------------
+# 1 - Comente os pacotes que não deseja instalar ou remova
+#     o comentário daqueles que você quer instalar.
+# 2 - Você também pode incluir outros pacotes que não
+#     estejam listados (um pacote por linha).
+# 3 - Salve com Ctrl-S e saia com Ctrl-X para retornar.
+# ----------------------------------------------------------
+
+## player de video...
+#vlc
+#vlc-l10n
+mpv
+
+## Editor de tags mp3...
+exfalso
+
+## Biblioteca de música...
+#quodlibet
+mpd
+mpc
+ncmpcpp
+
+## Player para a linha de comando...
+#moc
+
+## Conversor de som...
+#soundconverter
+
+## Screencasts...
+#kazam
+#peek
+
+## Stream de vídeo...
+#obs-studio
+
+## Edição de vídeo...
+#kdenlive
+#kde-style-breeze
+
+## Editor de áudio...
+#audacity
+
+## Editor de partituras...
+#musescore-common
+
+## Linux Multimedia Studio...
+#lmms
+
+## Sequenciador de baterias...
+#hydrogen
+
+## Estação de produção de áudio...
+#ardour

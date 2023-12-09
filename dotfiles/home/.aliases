@@ -1,0 +1,71 @@
+### DICA: Adiciona no seu .$SHELLrc em seu home ###
+#if [ -f ~/.aliases ]; then
+#	source ~/.aliases;
+#fi
+
+### Packages Managers ###
+
+# emerge - GentooLinux
+alias mgrin='sudo emerge --ask --verbose --quiet'
+alias mgrsy='sudo emaint --auto sync'
+alias mgrup='sudo emerge --ask --verbose --quiet --update --deep --newuse @world'
+alias mgrse='emerge --search'
+alias mgrrm='sudo emerge --ask --verbose --quiet --depclean'
+alias mgrli='qlist -IRv'
+
+## PACMAN - ArchLinux
+#alias yin='yay -S'
+#alias ps='pacsearch'
+#alias ys='yay -Ss'
+#alias yr='yay -Rncs'
+#alias yu='yay'
+#alias yq='yay -Q'
+#alias yl='yay -U'
+
+## APT - Nala - Debian
+#alias nin='sudo nala install'
+#alias ns='nala search'
+#alias nr='sudo nala remove'
+#alias nu='sudo nala upgrade'
+
+## XBPS - VoidLinux
+#alias xin='sudo xbps-install -S'
+#alias xs='xbps-query -Rs'
+#alias xr='sudo xbps-remove -R'
+#alias xu='sudo xbps-install -Syu'
+#alias xq='xbps-query --list-pkgs'
+#alias xc='sudo xbps-remove -Oo'
+
+## DNF - Fedora
+#alias din='sudo dnf in'
+#alias ds='sudo dnf se'
+#alias dup='sudo dnf up'
+#alias dq='dnf list --installed'
+#alias dr='sudo dnf rm'
+
+### Gerenciadores de Systemd ###
+#alias sv='sudo systemctl'
+
+### ways ###
+#alias para movimentação mais agil no terminal
+alias suck='cd ~/.config/suckless/'
+alias suckway='cd ~/.config/suckless-wayland/'
+alias vimrc='cd ~/.config/nvim/'
+alias estudent='cd ~/Estudent/Program'
+alias faculty='cd ~/Estudent/faculty'
+
+
+### Extras ###
+
+## Utils
+alias pdfl='pdflatex'
+alias za='zathura'
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias vi='emacs'
+alias rfbl='sudo rfkill unblock bluetooth'
+alias mkin="make && sudo make clean install"
+alias mesoninstall="rm -rf build && meson setup build && ninja -C build && sudo ninja -C build install"
+#### Edit Configs ####
+alias zshrc='vi ~/.zshrc'

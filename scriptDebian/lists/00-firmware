@@ -1,0 +1,11 @@
+## Metapacote para diversos drivers non-free
+firmware-linux-nonfree
+## Microcode para CPUs Intel i686 e x86_64
+# intel-microcode
+amd64-microcode
+## Hardware de rede Atheros
+firmware-atheros
+## hardware de rede Realtek
+firmware-realtek
+## Hardware de rede Intel
+firmware-iwlwifi

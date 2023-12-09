@@ -1,0 +1,43 @@
+# ----------------------------------------------------------
+# UTILITÁRIOS DE SISTEMA
+# ----------------------------------------------------------
+# 1 - Comente os pacotes que não deseja instalar ou remova
+#     o comentário daqueles que você quer instalar.
+# 2 - Você também pode incluir outros pacotes que não
+#     estejam listados (um pacote por linha).
+# 3 - Salve com Ctrl-S e saia com Ctrl-X para retornar.
+# ----------------------------------------------------------
+
+
+## Menus interativos...
+j4-dmenu-desktop
+rofi
+
+## Configuração do monitor...
+arandr
+
+## Gerenciamento de arquivos...
+pcmanfm
+
+## Busca de arquivos...
+catfish
+
+## Terminal padrão...
+alacritty
+#xfce4-terminal
+# rxvt-unicode-256color
+
+## Aparência...
+lxappearance
+
+## Editor de imagens
+gimp
+
+## Gerenciamento de fontes
+font-manager
+
+#Gerenciador de senhas
+keepassxc
+
+## Calendário...
+gsimplecal
