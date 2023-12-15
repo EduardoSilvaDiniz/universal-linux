@@ -6,12 +6,12 @@
 ### Packages Managers ###
 
 # emerge - GentooLinux
-alias mgrin='sudo emerge --ask --verbose --quiet'
-alias mgrsy='sudo emaint --auto sync'
-alias mgrup='sudo emerge --ask --verbose --quiet --update --deep --newuse @world'
-alias mgrse='emerge --search'
-alias mgrrm='sudo emerge --ask --verbose --quiet --depclean'
-alias mgrli='qlist -IRv'
+#alias mgrin='sudo emerge --ask --verbose --quiet'
+#alias mgrsy='sudo emaint --auto sync'
+#alias mgrup='sudo emerge --ask --verbose --quiet --update --deep --newuse @world'
+#alias mgrse='emerge --search'
+#alias mgrrm='sudo emerge --ask --verbose --quiet --depclean'
+#alias mgrli='qlist -IRv'
 
 ## PACMAN - ArchLinux
 #alias yin='yay -S'
@@ -27,6 +27,13 @@ alias mgrli='qlist -IRv'
 #alias ns='nala search'
 #alias nr='sudo nala remove'
 #alias nu='sudo nala upgrade'
+
+## Apt - debian/ubuntu
+alias in='sudo apt install'
+alias se='apt search'
+alias re='sudo apt remove'
+alias upg='sudo apt update && sudo apt upgrade'
+alias autore='sudo apt autoremove'
 
 ## XBPS - VoidLinux
 #alias xin='sudo xbps-install -S'
@@ -48,11 +55,11 @@ alias mgrli='qlist -IRv'
 
 ### ways ###
 #alias para movimentação mais agil no terminal
-alias suck='cd ~/.config/suckless/'
-alias suckway='cd ~/.config/suckless-wayland/'
-alias vimrc='cd ~/.config/nvim/'
-alias estudent='cd ~/Estudent/Program'
-alias faculty='cd ~/Estudent/faculty'
+#alias suck='cd ~/.config/suckless/'
+#alias suckway='cd ~/.config/suckless-wayland/'
+#alias vimrc='cd ~/.config/nvim/'
+#alias estudent='cd ~/Estudent/Program'
+#alias faculty='cd ~/Estudent/faculty'
 
 
 ### Extras ###
@@ -67,5 +74,6 @@ alias vi='emacs'
 alias rfbl='sudo rfkill unblock bluetooth'
 alias mkin="make && sudo make clean install"
 alias mesoninstall="rm -rf build && meson setup build && ninja -C build && sudo ninja -C build install"
+alias vim='nvim'
 #### Edit Configs ####
 alias zshrc='vi ~/.zshrc'
