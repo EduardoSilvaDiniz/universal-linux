@@ -1,7 +1,8 @@
-### DICA: Adiciona no seu .$SHELLrc em seu home ###
+### DICA: Adiciona em /$HOME/.$SHELLrc ###
 #if [ -f ~/.aliases ]; then
 #	source ~/.aliases;
 #fi
+###
 
 ### Packages Managers ###
 
