@@ -1,21 +1,22 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
-dirs=("Documents" "Pictures" "Media" ".emacs.d" ".doom.d")
-dirsConfig=("alacritty" "mpd" "ncmpcpp" "Qbittorrent")
+dirs=("Documentos" "Imagens" "Videos")
+dirsConfig=("alacritty" "mpd" "ncmpcpp" "Qbittorrent" "rclone")
 
-ln -s ~/Sync/default/Music ~/Music
+ln -s ~/Sync/default/Músicas ~/
+ln -s ~/Sync/home/.config/systemd/user/rclone-adventista.service ~/.config/systemd/user
+ln -s ~/Sync/home/.config/systemd/user/rclone-personal.service ~/.config/systemd/user
 
-for a in ${dirs[@]}; do ln -s ~/Sync/home/$a ~/$a
+for a in ${dirs[@]}; do 
+	ln -s ~/Sync/home/$a ~/$a
 done
 
-for a in ${dirsConfig[@]}; do ln -s ~/Sync/home/.config/$a ~/.config/$a
+for a in ${dirsConfig[@]}; do 
+	ln -s ~/Sync/home/.config/$a ~/.config/$a
 done
 
-mkdir ~/Rclone
-mkdir -p ~/Rclone/adventista
-mkdir -p ~/Rclone/personal
+mkdir ~/.local/rclone
+mkdir -p ~/.local/rclone/adventista
+mkdir -p ~/.local/rclone/personal
 
-#TODO descobrir qual é gerenciador de serviço e adiciona o serviço da forma correta e ativar
-#systemD
-#sudo systemctl enable --now syncthing@edu.service
-#openRC
+sudo systemctl enable --now syncthing@edu.service
